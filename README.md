@@ -58,7 +58,6 @@ $ mkdir artifacts
 $ mv _build/*.tar.gz artifacts
 $ tree artifacts
 
-
 ## Links
 
 - [DMG](https://cmake.org/cmake/help/latest/module/CPackDMG.html)
