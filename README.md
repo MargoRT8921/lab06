@@ -44,7 +44,19 @@ $ alias github-release=~/go/bin/github-release
 ```bash
 $ github-release info -u ${GITHIUB_USERNAME} -r lab06
 ```
-5. Обрадоваться жизни
+5. 
+$ cmake -H. -B_build
+$ cmake --build _build
+$ cd _build
+$ cpack -G "TGZ"
+$ cd ..
+
+$ cmake -H. -B_build -DCPACK_GENERATOR="TGZ"
+$ cmake --build _build --target package
+
+$ mkdir artifacts
+$ mv _build/*.tar.gz artifacts
+$ tree artifacts
 
 
 ## Links
